@@ -25,12 +25,13 @@
 </head>
 
 <body>
+  <!-- Title -->
+  @include('partials.title')
+  
+  <!-- Navigation -->
+  @include('partials.header')
 
-    <!-- Title -->
-    @include('partials.title')
-
-    <!-- Navigation -->
-    @include('partials.header')
+  {{-- {{dd(Route::getCurrentRoute()->uri())}} --}}
 
     <!-- Contents of Pages ... -->
     @yield('content')
